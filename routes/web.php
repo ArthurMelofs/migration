@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-route::get ('/rpg/sistema',[rpgcontroller::class, 'rpg']);
+
