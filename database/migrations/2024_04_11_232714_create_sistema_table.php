@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table-> foreignId('rpg_id');
             $table-> string ('sistema',55);
+
+        
             
         });
     }

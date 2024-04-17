@@ -17,4 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route:: prefix('rpg')->group(function(){
+
+    route::get ('/',[rpgcontroller::class, 'rpg'])->name('rpgs');
+    route::get ('/create',[rpgcontroller::class, 'create'])->name('rpgs-create');
+    route::post ('/',[rpgcontroller::class, 'store'])->name('rpgs-store');
+
+
+
+});
 

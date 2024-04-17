@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rpg', function (Blueprint $table) {
+        Schema::create('rpgs', function (Blueprint $table) {
             $table->id();
             $table -> string ('nome',55);
             $table-> string('empresa',55);
-            $table -> year ('ano_criação') ->default('2021');
+            $table -> year ('ano_criação');
             $table -> double ('valor',8,2);
+          
            
         });
     }
